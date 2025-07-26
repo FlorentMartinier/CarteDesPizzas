@@ -1,0 +1,14 @@
+<div class="card-container" 
+     [class.flipped]="flipped"
+     (mouseenter)="toggleFlip()" 
+     (mouseleave)="resetFlip()" 
+     (click)="toggleFlip()">
+  <div class="card">
+    <div class="front">
+      <img [src]="image" alt="Pizza">
+    </div>
+    <div class="back">
+      <p>{{ description }}</p>
+    </div>
+  </div>
+</div>

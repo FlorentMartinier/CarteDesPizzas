@@ -1,0 +1,16 @@
+<h1>Carte des pizzas de Florent</h1>
+<div class="container">
+  <header>
+    <select [(ngModel)]="selectedMonth">
+      <option *ngFor="let month of months">{{ month }}</option>
+    </select>
+  </header>
+
+  <main class="grid">
+    <app-pizza-card 
+      *ngFor="let pizza of filteredPizzas"
+      [image]="pizza.image"
+      [description]="pizza.description">
+    </app-pizza-card>
+  </main>
+</div>
