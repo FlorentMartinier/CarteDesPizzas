@@ -10,7 +10,8 @@
     <app-pizza-card 
       *ngFor="let pizza of filteredPizzas"
       [image]="pizza.image"
-      [description]="pizza.description">
+      [description]="pizza.description"
+      [title]="pizza.title">
     </app-pizza-card>
   </main>
 </div>

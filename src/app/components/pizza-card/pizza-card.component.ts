@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PizzaCardComponent {
   @Input() image!: string;
+  @Input() title!: string;
   @Input() description!: string;
 
   flipped: boolean = false;
