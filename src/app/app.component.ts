@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { getCurrentMonth, Month } from './model/Month';
 
 interface Pizza {
   image: string;
   description: string;
-  months: string[] | undefined;
+  months: Month[] | undefined;
   title: string;
 }
 
@@ -14,25 +15,21 @@ interface Pizza {
   standalone: false
 })
 export class AppComponent {
-  months = [
-    'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
-    'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'
-  ];
-  
-  selectedMonth: string = this.months[new Date().getMonth()];
+  selectedMonth: Month = getCurrentMonth();
+  months = Object.values(Month);
 
   pizzas: Pizza[] = [
     {
       image: 'assets/asperge.jpg',
       description: 'Crème d\'asperge, guanciale, asperges',
       title: 'L\'asperge',
-      months: ['Avril', 'Mai']
+      months: [Month.AVRIL, Month.MAI]
     },
     {
       image: 'assets/aubergine.jpg',
       description: 'Sauce tomate, aubergine, mozarella, parmesan, basilic',
       title: 'L\'aubergine',
-      months: ['Mai', 'Juin', 'Juillet', 'Août', 'Septembre']
+      months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
     {
       image: 'assets/burrata.jpg',
