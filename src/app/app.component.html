@@ -1,28 +1,53 @@
 <html>
-  <app-logo></app-logo>
-  <div class="container">
-    <header>
-      <div class="relative max-w-xs">
-        <select
-          [(ngModel)]="selectedMonth"
-          class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <option *ngFor="let month of months">{{ month }}</option>
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+  <app-logo class="w-24 md:w-32 lg:w-40"></app-logo>
+  <div class="full-container">
+    <header class="w-full flex justify-center py-4">
+      <div class="flex gap-4 max-w-2xl w-full px-4">
+        <!-- Select Mois -->
+        <div class="relative w-1/2">
+          <select
+            [(ngModel)]="selectedMonth"
+            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option *ngFor="let month of months">{{ month }}</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
-      </div>      
+    
+        <!-- Select Base -->
+        <div class="relative w-1/2">
+          <select
+            [(ngModel)]="selectedBase"
+            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option [ngValue]="null">Toutes les bases</option>
+            <option *ngFor="let base of baseOptions" [ngValue]="base">
+              {{ base }}
+            </option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </header>
+    
+    
 
     <main class="grid">
       <app-pizza-card 
         *ngFor="let pizza of filteredPizzas"
         [image]="pizza.image"
-        [description]="pizza.description"
-        [title]="pizza.title">
+        [title]="pizza.title"
+        [base]="pizza.base"
+        [beforeCooking]="pizza.beforeCooking"
+        [afterCooking]="pizza.afterCooking">
       </app-pizza-card>
     </main>
   </div>
