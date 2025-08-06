@@ -91,8 +91,8 @@ export class AppComponent {
       image: 'assets/chevre_miel_figue.jpeg',
       title: 'La chèvre miel figues',
       base: 'Crème 🤍',
-      beforeCooking: 'Chèvre 🧀, miel 🍯, romarin 🌿, figues 🌰',
-      afterCooking: '',
+      beforeCooking: 'Chèvre 🧀, romarin 🌿, figues 🌰',
+      afterCooking: 'miel 🍯',
       months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
     {
