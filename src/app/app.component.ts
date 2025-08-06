@@ -64,12 +64,52 @@ export class AppComponent {
       months: undefined
     },
     {
-      image: 'assets/reine.jpeg',
-      title: 'La reine',
+      image: 'assets/reine_truffe.jpeg',
+      title: 'La reine de truffe',
       base: 'Sauce tomate 🍅',
       beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon truffé 🥩',
       afterCooking: '',
       months: undefined
+    },
+    {
+      image: 'assets/reine.jpg',
+      title: 'La reine',
+      base: 'Sauce tomate 🍅',
+      beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon 🥩',
+      afterCooking: '',
+      months: undefined
+    },
+    {
+      image: 'assets/4_fromages.jpg',
+      title: 'La 4 fromages',
+      base: 'Sauce tomate 🍅',
+      beforeCooking: 'Pécorino truffé 🧀, mozarella 🧀, parmesan 🧀, chèvre 🧀',
+      afterCooking: '',
+      months: undefined
+    },
+    {
+      image: 'assets/chevre_miel_figue.jpeg',
+      title: 'La chèvre miel figues',
+      base: 'Crème 🤍',
+      beforeCooking: 'Chèvre 🧀, miel 🍯, romarin 🌿, figues 🌰',
+      afterCooking: '',
+      months: [Month.JUIN, Month.JUILLET, Month.AOUT]
+    },
+    {
+      image: 'assets/margherita.jpg',
+      title: 'La Margherita',
+      base: 'Sauce tomate 🍅',
+      beforeCooking: 'mozarella 🧀, basilic ☘️',
+      afterCooking: 'Parmesan 🧀, basilic ☘️',
+      months: [Month.JUIN, Month.JUILLET, Month.AOUT]
+    },
+    {
+      image: 'assets/poivron.jpeg',
+      title: 'La Poivronnée',
+      base: 'Crème de poivron 🫑',
+      beforeCooking: 'Chèvre 🧀',
+      afterCooking: 'Parmesan 🧀',
+      months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
   ];
 
