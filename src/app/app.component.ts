@@ -113,18 +113,19 @@ export class AppComponent {
     },
   ];
 
-  get filteredPizzas(): Pizza[] {
-  return this.pizzas.filter(pizza => {
-    const matchBase = this.selectedBase ? pizza.base === this.selectedBase : true;
-    const matchMonth = pizza.months === undefined || pizza.months.includes(this.selectedMonth);
+  filteredPizzas(base: string | undefined): Pizza[] {
+    return this.pizzas.filter(pizza => {
+      const matchSelectedBase = this.selectedBase ? pizza.base === this.selectedBase : true;
+      const matchBase = base === undefined || pizza.base === base;
+      const matchMonth = pizza.months === undefined || pizza.months.includes(this.selectedMonth);
 
-    return matchBase && matchMonth;
-  });
-}
+      return matchSelectedBase && matchBase && matchMonth;
+    }).sort((pizza1, pizza2) => pizza2.base.localeCompare(pizza1.base));
+  }
 
   ngOnInit(): void {
     this.baseOptions = Array.from(
-      new Set(this.pizzas.map(pizza => pizza.base))
+      new Set(this.filteredPizzas(undefined).map(pizza => pizza.base))
     );
   }
 }

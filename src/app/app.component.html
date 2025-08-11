@@ -38,17 +38,20 @@
       </div>
     </header>
     
-    
-
-    <main class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
-      <app-pizza-card 
-        *ngFor="let pizza of filteredPizzas"
-        [image]="pizza.image"
-        [title]="pizza.title"
-        [base]="pizza.base"
-        [beforeCooking]="pizza.beforeCooking"
-        [afterCooking]="pizza.afterCooking">
-      </app-pizza-card>
-    </main>
+    <div *ngFor="let base of baseOptions">
+      <ng-container *ngIf="filteredPizzas(base) as pizzas">
+        <h1 class="text-left font-serif text-xl sm:text-3xl lg:text-4xl font-bold pt-4 pl-20" *ngIf="pizzas.length > 0">Base : {{ base }}</h1>
+        <main *ngIf="pizzas.length > 0" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+          <app-pizza-card 
+            *ngFor="let pizza of pizzas"
+            [image]="pizza.image"
+            [title]="pizza.title"
+            [base]="pizza.base"
+            [beforeCooking]="pizza.beforeCooking"
+            [afterCooking]="pizza.afterCooking">
+          </app-pizza-card>
+        </main>
+      </ng-container>
+    </div>
   </div>
 </html>
