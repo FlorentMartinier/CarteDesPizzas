@@ -1,0 +1,22 @@
+<div [ngClass]="{ 'border-b border-gray-200': !isOpen }">
+    <button
+        type="button"
+        (click)="toggle()"
+        class="w-full text-left px-4 py-3 flex justify-between items-center hover:bg-gray-200 font-serif text-xl sm:text-2xl lg:text-3xl font-bold transition cursor-pointer"
+    >
+        <span>{{ title }}</span>
+        <span [ngClass]="{ 'rotate-180': isOpen }" class="transition-transform duration-300">
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </span>
+    </button>
+
+    <div
+        [@toggle]="isOpen ? 'open' : 'closed'"
+        class="overflow-hidden border-t border-gray-200"
+    >
+        <ng-content></ng-content>
+    </div>
+</div>
+  

@@ -7,6 +7,7 @@
         <div class="relative w-1/2">
           <select
             [(ngModel)]="selectedMonth"
+            (ngModelChange)="onSelectedMonthChange()"
             class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option *ngFor="let month of months">{{ month }}</option>
@@ -39,19 +40,24 @@
     </header>
     
     <div *ngFor="let base of baseOptions">
-      <ng-container *ngIf="filteredPizzas(base) as pizzas">
-        <h1 class="text-left font-serif text-xl sm:text-3xl lg:text-4xl font-bold pt-4 pl-20" *ngIf="pizzas.length > 0">Base : {{ base }}</h1>
-        <main *ngIf="pizzas.length > 0" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
-          <app-pizza-card 
-            *ngFor="let pizza of pizzas"
-            [image]="pizza.image"
-            [title]="pizza.title"
-            [base]="pizza.base"
-            [beforeCooking]="pizza.beforeCooking"
-            [afterCooking]="pizza.afterCooking">
-          </app-pizza-card>
-        </main>
-      </ng-container>
+      <app-toggleable-section [title]="'Base : ' + base">
+        <ng-container *ngIf="getFilteredPizzas(base) as pizzas">
+          <main
+            *ngIf="pizzas.length > 0"
+            class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 p-4"
+          >
+            <app-pizza-card
+              *ngFor="let pizza of pizzas"
+              [image]="pizza.image"
+              [title]="pizza.title"
+              [base]="pizza.base"
+              [beforeCooking]="pizza.beforeCooking"
+              [afterCooking]="pizza.afterCooking"
+            ></app-pizza-card>
+          </main>
+        </ng-container>
+      </app-toggleable-section>
     </div>
+  
   </div>
 </html>
