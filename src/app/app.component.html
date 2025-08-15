@@ -1,14 +1,17 @@
-<html>
-  <app-logo class="w-24 md:w-32 lg:w-40"></app-logo>
-  <div>
-    <header class="w-full flex justify-center py-4">
+<html class="min-h-screen bg-gradient-to-b from-yellow-100 via-white to-pink-100">
+  <body class="font-sans text-gray-800">
+
+    <app-logo class="w-24 md:w-32 lg:w-40"></app-logo>
+
+    <!-- Filtres -->
+    <header class="w-full flex justify-center">
       <div class="flex gap-4 max-w-2xl w-full px-4">
         <!-- Select Mois -->
         <div class="relative w-1/2">
           <select
             [(ngModel)]="selectedMonth"
             (ngModelChange)="onSelectedMonthChange()"
-            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-yellow-400 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-400"
           >
             <option *ngFor="let month of months">{{ month }}</option>
           </select>
@@ -18,12 +21,12 @@
             </svg>
           </div>
         </div>
-    
+
         <!-- Select Base -->
         <div class="relative w-1/2">
           <select
             [(ngModel)]="selectedBase"
-            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="block w-full appearance-none px-4 py-2 pr-10 text-base text-gray-700 bg-white border border-yellow-400 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-400"
           >
             <option [ngValue]="null">Toutes les bases</option>
             <option *ngFor="let base of baseOptions" [ngValue]="base">
@@ -38,7 +41,8 @@
         </div>
       </div>
     </header>
-    
+
+    <!-- Liste des pizzas -->
     <div *ngFor="let base of baseOptions">
       <app-toggleable-section [title]="'Base : ' + base">
         <ng-container *ngIf="getFilteredPizzas(base) as pizzas">
@@ -58,6 +62,6 @@
         </ng-container>
       </app-toggleable-section>
     </div>
-  
-  </div>
+
+  </body>
 </html>

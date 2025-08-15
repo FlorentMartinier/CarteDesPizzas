@@ -12,7 +12,7 @@ export interface Pizza {
 export const pizzas: Pizza[] = [
     {
         image: 'assets/asperge.jpg',
-        title: 'L\'asperge',
+        title: 'Aspergeception',
         base: 'Crème d\'asperge 🥬',
         beforeCooking: 'Guanciale 🥩, asperges 🥬',
         afterCooking: '',
@@ -20,7 +20,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/aubergine.jpg',
-        title: 'L\'aubergine',
+        title: 'À l\'aubergine du 6ᵉ jour',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Aubergine 🍆, mozarella 🧀',
         afterCooking: 'Parmesan 🧀, basilic ☘️',
@@ -28,7 +28,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/burrata.jpg',
-        title: 'La truffée',
+        title: 'The Truffeman Show',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Pécorino truffé 🧀',
         afterCooking: 'Burrata truffée 🧀',
@@ -36,7 +36,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/choux_rouge.jpg',
-        title: 'L\'automnale',
+        title: 'The Shouning',
         base: 'Crème de choux rouge 🍁',
         beforeCooking: 'Pommes 🍏, Guanciale 🥩',
         afterCooking: '',
@@ -44,7 +44,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/courgette.jpg',
-        title: 'La courgette',
+        title: 'Le Cinquième Ingrédient',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Courgettes 🥒, mozarella 🧀, tomates cerises 🍅',
         afterCooking: 'Parmesan 🧀, basilic ☘️',
@@ -52,7 +52,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/reine_truffe.jpeg',
-        title: 'La reine de truffe',
+        title: 'La Reine Des Truffes',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon truffé 🥩',
         afterCooking: '',
@@ -60,7 +60,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/reine.jpg',
-        title: 'La reine',
+        title: 'Jam Bond',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon 🥩',
         afterCooking: '',
@@ -68,7 +68,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/4_fromages.jpg',
-        title: 'La 4 fromages',
+        title: 'Les 4 Fantastiques',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Pécorino truffé 🧀, mozarella 🧀, parmesan 🧀, chèvre 🧀',
         afterCooking: '',
@@ -76,15 +76,15 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/chevre_miel_figue.jpeg',
-        title: 'La chèvre miel figues',
-        base: 'Crème 🤍',
+        title: 'Le Silence des Chèvres',
+        base: 'Crème 🐄',
         beforeCooking: 'Chèvre 🧀, romarin 🌿, figues 🌰',
         afterCooking: 'miel 🍯',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
     {
         image: 'assets/margherita.jpg',
-        title: 'La Margherita',
+        title: 'Margherita La Land',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'mozarella 🧀, basilic ☘️',
         afterCooking: 'Parmesan 🧀, basilic ☘️',
@@ -92,10 +92,18 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/poivron.jpeg',
-        title: 'La Poivronnée',
-        base: 'Crème de poivron 🫑',
+        title: 'Poivron Pulpe Fiction',
+        base: 'Crème de poivron 🌶️',
         beforeCooking: 'Chèvre 🧀',
         afterCooking: 'Parmesan 🧀',
+        months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
+    },
+    {
+        image: 'assets/insolite.jpg',
+        title: 'Mirabelle Mécanique',
+        base: 'Crème 🐄',
+        beforeCooking: 'Pécorino truffé 🧀, figues 🌰, mirabelles 🟡',
+        afterCooking: '',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
 ];
