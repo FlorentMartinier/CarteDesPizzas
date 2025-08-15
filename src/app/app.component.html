@@ -44,23 +44,22 @@
 
     <!-- Liste des pizzas -->
     <div *ngFor="let base of baseOptions">
-      <app-toggleable-section [title]="'Base : ' + base">
-        <ng-container *ngIf="getFilteredPizzas(base) as pizzas">
-          <main
-            *ngIf="pizzas.length > 0"
-            class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 p-4"
-          >
-            <app-pizza-card
-              *ngFor="let pizza of pizzas"
-              [image]="pizza.image"
-              [title]="pizza.title"
-              [base]="pizza.base"
-              [beforeCooking]="pizza.beforeCooking"
-              [afterCooking]="pizza.afterCooking"
-            ></app-pizza-card>
-          </main>
-        </ng-container>
-      </app-toggleable-section>
+      <div *ngIf="getFilteredPizzas(base) as pizzas">
+          <app-toggleable-section *ngIf="pizzas.length > 0" [title]="'Base : ' + base">
+            <ng-container>
+            <main class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
+              <app-pizza-card
+                *ngFor="let pizza of pizzas"
+                [image]="pizza.image"
+                [title]="pizza.title"
+                [base]="pizza.base"
+                [beforeCooking]="pizza.beforeCooking"
+                [afterCooking]="pizza.afterCooking"
+              ></app-pizza-card>
+            </main>
+          </ng-container>
+        </app-toggleable-section>
+      </div>
     </div>
 
   </body>

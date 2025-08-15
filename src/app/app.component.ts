@@ -25,6 +25,7 @@ export class AppComponent {
   }
 
   onSelectedMonthChange(): void {
+    this.selectedBase = null;
     this.updateBases()
   }
 
