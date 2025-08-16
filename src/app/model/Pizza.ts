@@ -14,7 +14,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/asperge.jpg',
         title: 'Aspergeception',
         base: 'Crème d\'asperge 🥬',
-        beforeCooking: 'Guanciale 🥩, asperges 🥬',
+        beforeCooking: 'Guanciale 🥩, Asperges 🥬',
         afterCooking: '',
         months: [Month.AVRIL, Month.MAI]
     },
@@ -22,8 +22,8 @@ export const pizzas: Pizza[] = [
         image: 'assets/aubergine.jpg',
         title: 'À l\'aubergine du 6ᵉ jour',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Aubergine 🍆, mozarella 🧀',
-        afterCooking: 'Parmesan 🧀, basilic ☘️',
+        beforeCooking: 'Aubergine 🍆, Mozarella 🧀',
+        afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
     {
@@ -46,15 +46,15 @@ export const pizzas: Pizza[] = [
         image: 'assets/courgette.jpg',
         title: 'Le Cinquième Ingrédient',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Courgettes 🥒, mozarella 🧀, tomates cerises 🍅',
-        afterCooking: 'Parmesan 🧀, basilic ☘️',
+        beforeCooking: 'Courgettes 🥒, Mozarella 🧀, Tomates cerises 🍅',
+        afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: undefined
     },
     {
         image: 'assets/reine_truffe.jpeg',
         title: 'La Reine Des Truffes',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon truffé 🥩',
+        beforeCooking: 'Champignons 🍄‍🟫, Mozarella 🧀, Jambon truffé 🥩',
         afterCooking: '',
         months: undefined
     },
@@ -62,7 +62,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/reine.jpg',
         title: 'Jam Bond',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Champignons 🍄‍🟫, mozarella 🧀, jambon 🥩',
+        beforeCooking: 'Champignons 🍄‍🟫, Mozarella 🧀, Jambon 🥩',
         afterCooking: '',
         months: undefined
     },
@@ -70,24 +70,24 @@ export const pizzas: Pizza[] = [
         image: 'assets/4_fromages.jpg',
         title: 'Les 4 Fantastiques',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Pécorino truffé 🧀, mozarella 🧀, parmesan 🧀, chèvre 🧀',
+        beforeCooking: 'Pécorino truffé 🧀, Mozarella 🧀, Parmesan 🧀, Chèvre 🧀',
         afterCooking: '',
         months: undefined
     },
     {
         image: 'assets/chevre_miel_figue.jpeg',
-        title: 'Le Silence des Chèvres',
+        title: 'Figue Club',
         base: 'Crème 🐄',
-        beforeCooking: 'Chèvre 🧀, romarin 🌿, figues 🌰',
-        afterCooking: 'miel 🍯',
+        beforeCooking: 'Chèvre 🧀, Tomarin 🌿, Figues 🌰',
+        afterCooking: 'Miel 🍯',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
     {
         image: 'assets/margherita.jpg',
-        title: 'Margherita La Land',
+        title: 'Mozarella La Land',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'mozarella 🧀, basilic ☘️',
-        afterCooking: 'Parmesan 🧀, basilic ☘️',
+        beforeCooking: 'Mozarella 🧀, Basilic ☘️',
+        afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
     {
@@ -102,8 +102,40 @@ export const pizzas: Pizza[] = [
         image: 'assets/insolite.jpg',
         title: 'Mirabelle Mécanique',
         base: 'Crème 🐄',
-        beforeCooking: 'Pécorino truffé 🧀, figues 🌰, mirabelles 🟡',
+        beforeCooking: 'Pécorino truffé 🧀, Figues 🌰, Mirabelles 🟡',
         afterCooking: '',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
+    },
+    {
+        image: 'assets/chevre_miel.jpg',
+        title: 'Le Silence des Chèvres',
+        base: 'Crème 🐄',
+        beforeCooking: 'Chèvre 🧀',
+        afterCooking: 'Miel 🍯',
+        months: undefined
+    },
+    {
+        image: 'assets/fourme_roquette.jpg',
+        title: 'Fourme metal roquette',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Fourme 🧀, Noix 🫘',
+        afterCooking: 'Roquette 🥬, Noix 🫘',
+        months: undefined
+    },
+    {
+        image: 'assets/lard_bacon.jpg',
+        title: 'Jurassic Pork',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Mozarella 🧀, Lard 🥩, Bacon 🥩',
+        afterCooking: '',
+        months: undefined
+    },
+    {
+        image: 'assets/mortadelle.jpg',
+        title: 'La Mortadelle aux Trousses',
+        base: 'Crème 🐄',
+        beforeCooking: 'Mozarella 🧀, Pistaches 🥜',
+        afterCooking: 'Mortadelle pistachée 🥩, Pistaches 🥜',
+        months: undefined
     },
 ];
