@@ -15,13 +15,26 @@ export class AppComponent {
   openedBaseIndices = new Set<number>();
 
   getFilteredPizzas(base: string | undefined): Pizza[] {
-    return pizzas.filter(pizza => {
+    const filteredPizzas = pizzas.filter(pizza => {
       const matchSelectedBase = this.selectedBase ? pizza.base === this.selectedBase : true;
       const matchBase = base === undefined || pizza.base === base;
       const matchMonth = pizza.months === undefined || pizza.months.includes(this.selectedMonth);
 
       return matchSelectedBase && matchBase && matchMonth;
-    }).sort((pizza1, pizza2) => pizza2.base.localeCompare(pizza1.base));
+    })
+
+    // Tri par base, et par fréquence de base (les plus nombreuses apparaissent en premier)
+    const counts = filteredPizzas.reduce<Record<string, number>>((acc, pizza) => {
+      acc[pizza.base] = (acc[pizza.base] || 0) + 1;
+      return acc;
+    }, {});
+
+    return filteredPizzas.sort((pizza1, pizza2) => {
+      const diff = counts[pizza2.base] - counts[pizza1.base];
+      return diff !== 0 
+        ? diff 
+        : pizza2.base.localeCompare(pizza1.base);
+    });
   }
 
   onSelectedMonthChange(): void {
