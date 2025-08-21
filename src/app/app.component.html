@@ -55,6 +55,7 @@
                 [base]="pizza.base"
                 [beforeCooking]="pizza.beforeCooking"
                 [afterCooking]="pizza.afterCooking"
+                (cardFlipped)="handleFlip($event)">
               ></app-pizza-card>
             </main>
           </ng-container>

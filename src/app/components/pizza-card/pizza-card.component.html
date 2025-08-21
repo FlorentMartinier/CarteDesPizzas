@@ -5,9 +5,9 @@
 
 <div 
   class="cursor-pointer [perspective:1000px] w-full max-w-xs aspect-square mx-auto"
-  (mouseenter)="toggleFlip()" 
+  (mouseenter)="emitFlip()" 
   (mouseleave)="resetFlip()"
-  (touchstart)="toggleFlip()"
+  (touchstart)="emitFlip()"
 >
   <div
     class="relative w-full h-full duration-700 [transform-style:preserve-3d] shadow-2xl"

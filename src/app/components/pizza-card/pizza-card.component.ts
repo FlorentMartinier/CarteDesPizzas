@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pizza-card',
@@ -12,10 +12,16 @@ export class PizzaCardComponent {
   @Input() base!: string;
   @Input() beforeCooking!: string;
   @Input() afterCooking!: string;
+  @Output() cardFlipped = new EventEmitter<PizzaCardComponent>();
+
 
   flipped: boolean = false;
 
-  toggleFlip() {
+  emitFlip() {
+    this.cardFlipped.emit(this);
+  }
+
+  flip() {
     this.flipped = !this.flipped;
   }
 

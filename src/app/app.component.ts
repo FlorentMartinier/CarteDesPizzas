@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { getCurrentMonth, Month } from './model/Month';
 import { Pizza, pizzas } from './model/Pizza';
+import { PizzaCardComponent } from './components/pizza-card/pizza-card.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent {
   baseOptions: string[] = [];
   selectedBase: string | null = null;
   openedBaseIndices = new Set<number>();
+  flippedCard?: PizzaCardComponent;
 
   getFilteredPizzas(base: string | undefined): Pizza[] {
     const filteredPizzas = pizzas.filter(pizza => {
@@ -51,5 +53,13 @@ export class AppComponent {
     const filteredPizzas = this.getFilteredPizzas(undefined);
     const uniqueBases = new Set(filteredPizzas.map(pizza => pizza.base));
     this.baseOptions = Array.from(uniqueBases);
+  }
+
+  handleFlip(card: PizzaCardComponent) {
+    if (this.flippedCard && this.flippedCard !== card) {
+      this.flippedCard.resetFlip();
+    }
+    card.flip();
+    this.flippedCard = card;
   }
 }
