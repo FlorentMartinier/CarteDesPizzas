@@ -138,4 +138,12 @@ export const pizzas: Pizza[] = [
         afterCooking: 'Mortadelle pistachée 🥩, Pistaches 🥜',
         months: undefined
     },
+    {
+        image: 'assets/chorizo.jpg',
+        title: 'The Greatest Chorizo Man',
+        base: 'Crème de poivron 🌶️',
+        beforeCooking: 'Oignon 🧅, Chorizo 🥩, Parmesan 🧀, Piment 🌶️',
+        afterCooking: '',
+        months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
+    },
 ];
