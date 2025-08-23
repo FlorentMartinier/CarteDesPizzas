@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pizza-card',
@@ -14,8 +14,29 @@ export class PizzaCardComponent {
   @Input() afterCooking!: string;
   @Output() cardFlipped = new EventEmitter<PizzaCardComponent>();
 
+  constructor(private el: ElementRef) {}
+
+  visible = false;
+  loaded = false;
+  private observer?: IntersectionObserver;
 
   flipped: boolean = false;
+
+  ngAfterViewInit(): void {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.visible = true;
+          this.observer?.disconnect(); // On arrête d’observer après le premier affichage
+        }
+      });
+    });
+    this.observer.observe(this.el.nativeElement);
+  }
+
+  ngOnDestroy(): void {
+    this.observer?.disconnect();
+  }
 
   emitFlip() {
     this.cardFlipped.emit(this);
@@ -27,5 +48,9 @@ export class PizzaCardComponent {
 
   resetFlip() {
     this.flipped = false;
+  }
+
+  onImageLoad() {
+    this.loaded = true;
   }
 }

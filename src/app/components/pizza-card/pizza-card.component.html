@@ -17,7 +17,16 @@
     <!-- Face avant -->
     <div class="absolute inset-0 rounded-lg p-1 bg-gradient-to-br from-yellow-400 to-red-500 backface-hidden">
       <div class="w-full h-full rounded-md overflow-hidden">
-        <img class="w-full h-full object-cover" [src]="image" alt="Pizza" />
+        <img *ngIf="visible" 
+          (load)="onImageLoad()"
+          class="w-full h-full object-cover"
+          [src]="image"
+          alt="Pizza" />
+        <!-- Spinner Tailwind -->
+        <div *ngIf="visible && !loaded" 
+          class="absolute inset-0 flex items-center justify-center bg-gray-100/70 rounded-xl">
+          <div class="h-10 w-10 border-4 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+        </div>
       </div>
     </div>
     
