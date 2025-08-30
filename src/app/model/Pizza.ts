@@ -11,6 +11,30 @@ export interface Pizza {
 
 export const pizzas: Pizza[] = [
     {
+        image: 'assets/mortadelle_burrata.jpg',
+        title: 'Truffespotting',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Pécorino truffé 🧀',
+        afterCooking: 'Mortadelle trufée 🥩, Burrata 🧀, Pistaches 🥜',
+        months: undefined
+    },
+    {
+        image: 'assets/bleue.jpg',
+        title: 'La grande bleue',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Bleu d\'Auvergne 🧀',
+        afterCooking: '',
+        months: undefined
+    },
+    {
+        image: 'assets/chorizo.jpg',
+        title: 'The Greatest Chorizo Man',
+        base: 'Crème de poivron 🌶️',
+        beforeCooking: 'Oignon 🧅, Chorizo 🥩, Parmesan 🧀, Piment 🌶️',
+        afterCooking: '',
+        months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
+    },
+    {
         image: 'assets/asperge.jpg',
         title: 'Aspergeception',
         base: 'Crème d\'asperge 🥬',
