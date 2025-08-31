@@ -12,7 +12,7 @@ export interface Pizza {
 export const pizzas: Pizza[] = [
     {
         image: 'assets/mortadelle_burrata.jpg',
-        title: 'Truffespotting',
+        title: 'The Truffeman Show',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Pécorino truffé 🧀',
         afterCooking: 'Mortadelle trufée 🥩, Burrata 🧀, Pistaches 🥜',
@@ -20,23 +20,15 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/bleue.jpg',
-        title: 'La grande bleue',
+        title: 'La Grande Bleue',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Bleu d\'Auvergne 🧀',
         afterCooking: '',
         months: undefined
     },
     {
-        image: 'assets/chorizo.jpg',
-        title: 'The Greatest Chorizo Man',
-        base: 'Crème de poivron 🌶️',
-        beforeCooking: 'Oignon 🧅, Chorizo 🥩, Parmesan 🧀, Piment 🌶️',
-        afterCooking: '',
-        months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
-    },
-    {
         image: 'assets/asperge.jpg',
-        title: 'Aspergeception',
+        title: 'Les Lignes Vertes',
         base: 'Crème d\'asperge 🥬',
         beforeCooking: 'Guanciale 🥩, Asperges 🥬',
         afterCooking: '',
@@ -52,7 +44,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/burrata.jpg',
-        title: 'The Truffeman Show',
+        title: 'Burrat',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Pécorino truffé 🧀',
         afterCooking: 'Burrata truffée 🧀',
@@ -124,7 +116,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/insolite.jpg',
-        title: 'Mirabelle Mécanique',
+        title: 'Retour vers les fruits mûrs',
         base: 'Crème 🐄',
         beforeCooking: 'Pécorino truffé 🧀, Figues 🌰, Mirabelles 🟡',
         afterCooking: '',
