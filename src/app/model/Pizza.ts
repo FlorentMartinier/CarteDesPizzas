@@ -19,14 +19,6 @@ export const pizzas: Pizza[] = [
         months: undefined
     },
     {
-        image: 'assets/bleue.jpg',
-        title: 'La Grande Bleue',
-        base: 'Sauce tomate 🍅',
-        beforeCooking: 'Bleu d\'Auvergne 🧀',
-        afterCooking: '',
-        months: undefined
-    },
-    {
         image: 'assets/asperge.jpg',
         title: 'Les Lignes Vertes',
         base: 'Crème d\'asperge 🥬',
@@ -91,6 +83,14 @@ export const pizzas: Pizza[] = [
         months: undefined
     },
     {
+        image: 'assets/stracciatella_truffe.jpg',
+        title: 'Jambon, La Truffe et le crémeux',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Mozarella truffée 🧀',
+        afterCooking: 'Jambon truffé 🥩, Stracciatella truffée 🐄',
+        months: undefined
+    },
+    {
         image: 'assets/chevre_miel_figue.jpeg',
         title: 'Figue Club',
         base: 'Crème 🐄',
@@ -113,6 +113,14 @@ export const pizzas: Pizza[] = [
         beforeCooking: 'Chèvre 🧀',
         afterCooking: 'Parmesan 🧀',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
+    },
+    {
+        image: 'assets/bleue.jpg',
+        title: 'La Grande Bleue',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Bleu d\'Auvergne 🧀',
+        afterCooking: '',
+        months: undefined
     },
     {
         image: 'assets/insolite.jpg',
@@ -162,4 +170,21 @@ export const pizzas: Pizza[] = [
         afterCooking: '',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
+    {
+        image: 'assets/poulet_curry.jpg',
+        title: 'Indiana Jaune',
+        base: 'Crème de coco/curry 🥥🌶️',
+        beforeCooking: 'Poulet 🥩, Oignon 🧅, Poivrons 🌶️, Chèvre 🧀',
+        afterCooking: '',
+        months: undefined
+    },
+    {
+        image: 'assets/steak_lardons.jpg',
+        title: 'Inter Steak Lard',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Mozzarella 🧀, Steak Haché 🥩, Lardons 🥩',
+        afterCooking: '',
+        months: undefined
+    },
+    
 ];
