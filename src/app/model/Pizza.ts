@@ -186,5 +186,13 @@ export const pizzas: Pizza[] = [
         afterCooking: '',
         months: undefined
     },
+    {
+        image: 'assets/butternut.jpg',
+        title: 'Harry Potternut',
+        base: 'Crème de butternut 🍅',
+        beforeCooking: 'Fourme 🧀',
+        afterCooking: 'Noix 🫘',
+        months: [Month.SEPTEMBRE, Month.OCTOBRE, Month.NOVEMBRE, Month.DECEMBRE, Month.JANVIER, Month.FEVRIER]
+    },
     
 ];
