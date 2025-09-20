@@ -28,7 +28,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/aubergine.jpg',
-        title: 'À l\'aubergine du 6ᵉ jour',
+        title: 'Aubergine mécanique',
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Aubergine 🍆, Mozarella 🧀',
         afterCooking: 'Parmesan 🧀, Basilic ☘️',
@@ -104,7 +104,7 @@ export const pizzas: Pizza[] = [
         base: 'Sauce tomate 🍅',
         beforeCooking: 'Mozarella 🧀, Basilic ☘️',
         afterCooking: 'Parmesan 🧀, Basilic ☘️',
-        months: [Month.JUIN, Month.JUILLET, Month.AOUT]
+        months: undefined
     },
     {
         image: 'assets/poivron.jpeg',
