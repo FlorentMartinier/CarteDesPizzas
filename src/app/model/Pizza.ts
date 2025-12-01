@@ -218,5 +218,12 @@ export const pizzas: Pizza[] = [
         afterCooking: 'Mortadelle pistachée 🥩, Pistaches 🥜',
         months: undefined
     },
-    
+    {
+        image: 'assets/raclette.jpg',
+        title: 'La Raclette des singes',
+        base: 'Crème 🐄',
+        beforeCooking: 'Pommes de terres 🥔, Raclette 🧀',
+        afterCooking: 'Poivre 🧂, Bresaola 🥩',
+        months: undefined
+    },
 ];
