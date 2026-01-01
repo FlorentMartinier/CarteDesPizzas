@@ -11,14 +11,6 @@ export interface Pizza {
 
 export const pizzas: Pizza[] = [
     {
-        image: 'assets/saucisse.jpg',
-        title: 'Are no pain, are no gain',
-        base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozarella 🧀, Saucisse crabourg 🥩',
-        afterCooking: '',
-        months: undefined
-    },
-    {
         image: 'assets/cepes_chevre.jpg',
         title: 'Incèpechèvre',
         base: 'Sauce tomate 🍅',
