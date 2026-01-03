@@ -22,7 +22,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/ail.jpg',
         title: 'Ail Hard',
         base: 'Crème d\'ail 🧄',
-        beforeCooking: 'Mozarella 🧀',
+        beforeCooking: 'Mozzarella 🧀',
         afterCooking: 'Persillade 🌿🧄',
         months: undefined
     },
@@ -46,7 +46,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/aubergine.jpg',
         title: 'Aubergine mécanique',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Aubergine 🍆, Mozarella 🧀',
+        beforeCooking: 'Aubergine 🍆, Mozzarella 🧀',
         afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
@@ -70,7 +70,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/courgette.jpg',
         title: 'Le Cinquième Ingrédient',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Courgettes 🥒, Mozarella 🧀, Tomates cerises 🍅',
+        beforeCooking: 'Courgettes 🥒, Mozzarella 🧀, Tomates cerises 🍅',
         afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: undefined
     },
@@ -78,7 +78,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/reine_truffe.jpeg',
         title: 'La Reine Des Truffes',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Champignons 🍄‍🟫, Mozarella 🧀, Jambon truffé 🥩',
+        beforeCooking: 'Champignons 🍄‍🟫, Mozzarella 🧀, Jambon truffé 🥩',
         afterCooking: '',
         months: undefined
     },
@@ -86,15 +86,15 @@ export const pizzas: Pizza[] = [
         image: 'assets/reine.jpg',
         title: 'Jam Bond',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Champignons 🍄‍🟫, Mozarella 🧀, Jambon 🥩',
-        afterCooking: '',
+        beforeCooking: 'Champignons 🍄‍🟫, Mozzarella 🧀',
+        afterCooking: 'Jambon 🥩',
         months: undefined
     },
     {
         image: 'assets/4_fromages.jpg',
         title: 'Les 4 Fantastiques',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Pécorino truffé 🧀, Mozarella 🧀, Parmesan 🧀, Chèvre 🧀',
+        beforeCooking: 'Pécorino truffé 🧀, Mozzarella 🧀, Parmesan 🧀, Chèvre 🧀',
         afterCooking: '',
         months: undefined
     },
@@ -102,7 +102,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/stracciatella_truffe.jpg',
         title: 'Jambon, La Truffe et le crémeux',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozarella truffée 🧀',
+        beforeCooking: 'Mozzarella truffée 🧀',
         afterCooking: 'Jambon truffé 🥩, Stracciatella truffée 🐄',
         months: undefined
     },
@@ -116,9 +116,9 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/margherita.jpg',
-        title: 'Mozarella La Land',
+        title: 'Mozzarella La Land',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozarella 🧀, Basilic ☘️',
+        beforeCooking: 'Mozzarella 🧀, Basilic ☘️',
         afterCooking: 'Parmesan 🧀, Basilic ☘️',
         months: undefined
     },
@@ -163,10 +163,10 @@ export const pizzas: Pizza[] = [
         months: undefined
     },
     {
-        image: 'assets/lard_bacon.jpg',
+        image: 'assets/pulled_pork.jpg',
         title: 'Jurassic Pork',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozarella 🧀, Lard 🥩, Bacon 🥩',
+        beforeCooking: 'Mozzarella 🧀, Lard 🥩, Bacon 🥩',
         afterCooking: '',
         months: undefined
     },
@@ -174,7 +174,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/mortadelle.jpg',
         title: 'La Mortadelle aux Trousses',
         base: 'Crème 🐄',
-        beforeCooking: 'Mozarella 🧀, Pistaches 🥜',
+        beforeCooking: 'Mozzarella 🧀, Pistaches 🥜',
         afterCooking: 'Mortadelle pistachée 🥩, Pistaches 🥜',
         months: undefined
     },
@@ -214,7 +214,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/mortadelle_tomate.jpg',
         title: 'La Mortadelle Sans La Peau',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozarella 🧀, Pistaches 🥜',
+        beforeCooking: 'Mozzarella 🧀, Pistaches 🥜',
         afterCooking: 'Mortadelle pistachée 🥩, Pistaches 🥜',
         months: undefined
     },
