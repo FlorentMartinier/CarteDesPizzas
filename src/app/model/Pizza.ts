@@ -166,7 +166,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/pulled_pork.jpg',
         title: 'Jurassic Pork',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozzarella 🧀, Lard 🥩, Bacon 🥩',
+        beforeCooking: 'Mozzarella 🧀, Pulled pork sauce barbecue 🥩, Oignons rouges🧅',
         afterCooking: '',
         months: undefined
     },
@@ -182,7 +182,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/chorizo.jpg',
         title: 'The Greatest Chorizo Man',
         base: 'Crème de poivron 🌶️',
-        beforeCooking: 'Oignon 🧅, Chorizo 🥩, Parmesan 🧀, Piment 🌶️',
+        beforeCooking: 'Oignons 🧅, Chorizo 🥩, Parmesan 🧀, Piment 🌶️',
         afterCooking: '',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
