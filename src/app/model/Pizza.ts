@@ -227,7 +227,7 @@ export const pizzas: Pizza[] = [
         months: undefined
     },
     {
-        image: 'assets/tartiflette.jpg',
+        image: 'assets/tartiflette.png',
         title: 'Tarti Driver',
         base: 'Crème 🐄',
         beforeCooking: 'Reblochon 🧀, Lardons 🥩, Oignons 🧅',
