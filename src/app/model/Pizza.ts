@@ -166,7 +166,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/pulled_pork.jpg',
         title: 'Jurassic Pork',
         base: 'Sauce tomate 🍅',
-        beforeCooking: 'Mozzarella 🧀, Pulled pork sauce barbecue 🥩, Oignons rouges🧅',
+        beforeCooking: 'Mozzarella 🧀, Pulled pork sauce barbecue 🥩, Oignons Rouges 🧅',
         afterCooking: '',
         months: undefined
     },
@@ -224,6 +224,14 @@ export const pizzas: Pizza[] = [
         base: 'Crème 🐄',
         beforeCooking: 'Pommes de terres 🥔, Raclette 🧀',
         afterCooking: 'Poivre 🧂, Bresaola 🥩',
+        months: undefined
+    },
+    {
+        image: 'assets/tartiflette.jpg',
+        title: 'Tarti Driver',
+        base: 'Crème 🐄',
+        beforeCooking: 'Reblochon 🧀, Lardons 🥩, Oignons 🧅',
+        afterCooking: 'Poivre 🧂',
         months: undefined
     },
 ];
