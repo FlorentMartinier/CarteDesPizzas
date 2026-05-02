@@ -124,7 +124,7 @@ export const pizzas: Pizza[] = [
     },
     {
         image: 'assets/poivron.jpeg',
-        title: 'Poivron Pulpe Fiction',
+        title: 'Dragon et Poivron Rouge',
         base: 'Crème de poivron 🌶️',
         beforeCooking: 'Chèvre 🧀',
         afterCooking: 'Parmesan 🧀',
@@ -208,7 +208,7 @@ export const pizzas: Pizza[] = [
         base: 'Crème de butternut 🎃',
         beforeCooking: 'Fourme 🧀',
         afterCooking: 'Noix 🫘',
-        months: [Month.SEPTEMBRE, Month.OCTOBRE, Month.NOVEMBRE, Month.DECEMBRE, Month.JANVIER, Month.FEVRIER]
+        months: [Month.SEPTEMBRE, Month.OCTOBRE, Month.NOVEMBRE, Month.DECEMBRE, Month.JANVIER, Month.FEVRIER, Month.MARS]
     },
     {
         image: 'assets/mortadelle_tomate.jpg',
@@ -233,5 +233,13 @@ export const pizzas: Pizza[] = [
         beforeCooking: 'Reblochon 🧀, Lardons 🥩, Oignons 🧅',
         afterCooking: 'Poivre 🧂',
         months: undefined
+    },
+    {
+        image: 'assets/poulpe.png',
+        title: 'Poulpe fiction',
+        base: 'Sauce tomate 🍅, Mozzarella 🧀',
+        beforeCooking: 'Poulpe 🐙, Lardons 🥩',
+        afterCooking: 'Sauce Vierge 🌿🧄',
+        months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
 ];
