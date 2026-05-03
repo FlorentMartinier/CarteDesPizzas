@@ -235,10 +235,10 @@ export const pizzas: Pizza[] = [
         months: undefined
     },
     {
-        image: 'assets/poulpe.png',
+        image: 'assets/poulpe.jpg',
         title: 'Poulpe fiction',
-        base: 'Sauce tomate 🍅, Mozzarella 🧀',
-        beforeCooking: 'Poulpe 🐙, Lardons 🥩',
+        base: 'Sauce tomate 🍅',
+        beforeCooking: 'Poulpe 🐙, Mozzarella 🧀',
         afterCooking: 'Sauce Vierge 🌿🧄',
         months: [Month.MAI, Month.JUIN, Month.JUILLET, Month.AOUT, Month.SEPTEMBRE]
     },
