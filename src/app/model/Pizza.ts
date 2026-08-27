@@ -1,12 +1,12 @@
 import { Month } from './Month';
 
 export interface Pizza {
-  image: string;
-  months: Month[] | undefined;
-  title: string;
-  base: string;
-  beforeCooking: string;
-  afterCooking: string;
+    image: string;
+    months: Month[] | undefined;
+    title: string;
+    base: string;
+    beforeCooking: string;
+    afterCooking: string;
 };
 
 export const pizzas: Pizza[] = [
@@ -110,7 +110,7 @@ export const pizzas: Pizza[] = [
         image: 'assets/chevre_miel_figue.jpeg',
         title: 'Figue Club',
         base: 'Crème 🐄',
-        beforeCooking: 'Chèvre 🧀, Tomarin 🌿, Figues 🌰',
+        beforeCooking: 'Chèvre 🧀, Figues 🌰, Romarin 🌿',
         afterCooking: 'Miel 🍯',
         months: [Month.JUIN, Month.JUILLET, Month.AOUT]
     },
